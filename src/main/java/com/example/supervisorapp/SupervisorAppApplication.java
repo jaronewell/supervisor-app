@@ -8,8 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class SupervisorAppApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(SupervisorAppApplication.class, args);
-    }
-
+  public static void main(String[] args) {
+    SpringApplication.run(SupervisorAppApplication.class, args);
+  }
 }

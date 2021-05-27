@@ -26,9 +26,9 @@ public class SupervisorController {
   }
 
   @PostMapping("/submit")
-  public ResponseEntity<String> submitRegistration(@Valid @RequestBody Registration registration){
-    System.out.println("Registration received for " + registration.toString());
-    return ResponseEntity.ok("Registration submission successful");
+  public ResponseEntity<Registration> submitRegistration(@Valid @RequestBody Registration registration){
+    System.out.println("Registration received for " + registration);
+    return ResponseEntity.ok(registration);
   }
 
   @ResponseStatus(HttpStatus.BAD_REQUEST)
